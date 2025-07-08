@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEIDE | Company Directory</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #1e1e2f;
+    }
+
+    .navbar-brand {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffc3 !important;
+      font-size: 1.4rem;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #00ffc3 !important;
+    }
+
+    .hero {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .directory-section {
+      padding: 3rem 0;
+    }
+
+    .company-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+      overflow: hidden;
+    }
+
+    .company-card:hover {
+      transform: scale(1.02);
+    }
+
+    .company-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .company-info {
+      padding: 1.2rem;
+    }
+
+    .company-info h5 {
+      font-weight: 600;
+      color: #1e1e2f;
+    }
+
+    .company-info p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .btn-visit {
+      background: #4e9f3d;
+      color: white;
+      padding: 0.4rem 1rem;
+      border: none;
+      font-weight: 500;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .btn-visit:hover {
+      background: #3c7e2f;
+    }
+
+    footer {
+      background: #1e1e2f;
+      color: #bbb;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark px-3">
+    <a class="navbar-brand" href="index.html">CEIDE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 20%;">
+      <ul class="navbar-nav ms-2">
+        <li class="nav-item"><button class="btn btn-outline-success me-2" type="submit">Search</button></li>
+        <li class="nav-item"><a class="nav-link" href="#">My Learning</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="Pro.html">CEIDE Pro</a></li>
+        <li class="nav-item"><a class="nav-link" href="Company Directory.html">Company Directory</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contacts.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Company Directory</h1>
+    <p>Connect with studios and creative firms seeking 3D, animation, VFX, and game design talent.</p>
+  </section>
+
+  <section class="container directory-section">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="company-card">
+          <img src="images/banner.jpg" alt="Pixel Forge Studios">
+          <div class="company-info">
+            <h5>Pixel Forge Studios</h5>
+            <p>Specializing in 3D animation for advertising & short films.</p>
+            <p><strong>Location:</strong> Colombo, Sri Lanka</p>
+            <a href="#" class="btn btn-visit">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="company-card">
+          <img src="images/cdpr-logo-horizontal-black-cmyk.jpg" alt="GameNest">
+          <div class="company-info">
+            <h5>GameNest Interactive</h5>
+            <p>Unity & Unreal game development studio hiring environment artists.</p>
+            <p><strong>Location:</strong> Warsaw, Poland</p>
+            <a href="#" class="btn btn-visit">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="company-card">
+          <img src="images/18.png" alt="VFX Bay">
+          <div class="company-info">
+            <h5>BioWare</h5>
+            <p>BioWare is a Canadian video game developer based in Edmonton.</p>
+            <p><strong>Location:</strong> Edmonton, Canada</p>
+            <a href="#" class="btn btn-visit">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="company-card">
+          <img src="images/FromSoftware-Logo.wine.png" alt="Render Hive">
+          <div class="company-info">
+            <h5>FromSoftware Inc.</h5>
+            <p>FromSoftware, Inc. is a Japanese video game developer and publisher.</p>
+            <p><strong>Location:</strong> Tokyo, Japan</p>
+            <a href="#" class="btn btn-visit">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="company-card">
+          <img src="images/naughty-dog(1).jpg" alt="Cutscene Collective">
+          <div class="company-info">
+            <h5>Naughty Dog</h5>
+            <p>Naughty Dog, LLC is an American first-party video game developer.</p>
+            <p><strong>Location:</strong> Santa Monica, California, United States</p>
+            <a href="#" class="btn btn-visit">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="company-card">
+          <img src="images/2082192.jpg" alt="FX Vision">
+          <div class="company-info">
+            <h5>Electronic Arts</h5>
+            <p>Electronic Arts Inc. is an American video game company headquartered in Redwood City, California.</p>
+            <p><strong>Location:</strong> California, USA</p>
+            <a href="#" class="btn btn-visit">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CEIDE | Connecting Creatives with Industry</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

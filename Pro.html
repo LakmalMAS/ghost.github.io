@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEIDE Pro | Professional Subscription</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {font-family: 'Poppins', sans-serif; background: #fafafa; color: #333;}
+
+    .navbar {
+      background-color: #1e1e2f;
+    }
+
+    .navbar-brand {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffc3 !important;
+      font-size: 1.4rem;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #00ffc3 !important;
+    }
+
+    .hero {background: #1e1e2f; color: white; padding: 4rem 2rem; text-align: center;}
+    .hero h1 {font-size: 2.5rem; font-weight: 800;}
+    .hero p {font-size: 1.2rem; margin: 1rem 0;}
+    .pricing-toggle {margin: 2rem 0; text-align: center;}
+    .card-sub {border: none; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    .card-sub.highlight {border: 2px solid #4e9f3d;}
+    .features {padding: 3rem 0;}
+    .feature-item {text-align: center; padding: 1rem;}
+    .feature-item i {font-size: 2.5rem; color: #4e9f3d;}
+    .catalog {padding: 3rem 0;}
+    .catalog-card img {border-radius: 8px;}
+    .cta-btn {background: #4e9f3d; color: white; padding: 0.75rem 1.5rem; font-weight: 600; border: none; border-radius: 4px;}
+    footer {background: #1e1e2f; color: #bbb; padding: 2rem; text-align: center;}
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark px-3">
+    <a class="navbar-brand" href="index.html">CEIDE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 20%;">
+      <ul class="navbar-nav ms-2">
+        <li class="nav-item"><button class="btn btn-outline-success me-2" type="submit">Search</button></li>
+        <li class="nav-item"><a class="nav-link" href="#">My Learning</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="Pro.html">CEIDE Pro</a></li>
+        <li class="nav-item"><a class="nav-link" href="Company Directory.html">Company Directory</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contacts.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>CEIDE Pro</h1>
+    <p>Unlock your creative future with 1,000+ courses and exclusive perks tailored for professionals.</p>
+    <button class="cta-btn">Start Your Free Trial</button>
+  </section>
+
+  <section class="pricing container">
+    <div class="pricing-toggle">
+      <button id="yearlyBtn" class="btn btn-outline-primary me-2 active">Yearly $19/mo</button>
+      <button id="monthlyBtn" class="btn btn-outline-primary">Monthly $29/mo</button>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="card-sub highlight p-4">
+          <h5 class="fw-bold">Plus Plan</h5>
+          <p id="priceYearly"><strong>$28.99/Month</strong></p>
+          <p id="priceMonthly" style="display:none;"><strong>$29</strong> per month</p>
+          <ul>
+            <li>Unlimited access to 1,000+ courses</li>
+            <li>12 credits to keep courses forever</li>
+            <li>Access to weekly free pro courses</li>
+            <li>20% discount on everything</li>
+            <li>CEIDE course certificates</li>
+          </ul>
+          <button class="cta-btn">Subscribe Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-sub highlight p-4">
+          <h5 class="fw-bold">Pro Plan</h5>
+          <p id="priceYearly2"><strong>$228/year</strong> (<em>$19/mo</em>)</p>
+          <p id="priceMonthly2" style="display:none;"><strong>$29</strong> per month</p>
+          <ul>
+            <li>Unlimited access to 1,000+ courses</li>
+            <li>12 credits to keep courses forever</li>
+            <li>Access to weekly free pro courses</li>
+            <li>20% discount on everything</li>
+            <li>CEIDE course certificates</li>
+          </ul>
+          <button class="cta-btn">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features container text-center">
+    <h2><strong>Why CEIDE Pro?</strong></h2>
+    <div class="row">
+      <div class="col-md-3 feature-item">
+        <i class="fas fa-th-large"></i><p>100+ new courses added weekly</p>
+      </div>
+      <div class="col-md-3 feature-item">
+        <i class="fas fa-credit-card"></i><p>Monthly credits to keep forever</p>
+      </div>
+      <div class="col-md-3 feature-item">
+        <i class="fas fa-tags"></i><p>Exclusive 20% marketplace discounts</p>
+      </div>
+      <div class="col-md-3 feature-item">
+        <i class="fas fa-certificate"></i><p>Downloadable CEIDE certificate</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog container">
+    <h2 class="text-center mb-4"><strong>Popular With Subscribers</strong></h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="catalog-card">
+          <img src="images/4.png" alt="After Effects"/>
+          <h5>Creating Inventory System in Unreal</h5>
+          <p class="text-muted">With John Doe</p>
+          <button class="btn btn-sm cta-btn">$29.99</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="catalog-card">
+          <img src="images/1.png" alt="Game Design"/>
+          <h5>Game Design Fundamentals</h5>
+          <p class="text-muted">With Jane Smith</p>
+          <button class="btn btn-sm cta-btn">Free With Pro</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="catalog-card">
+          <img src="images/5.png" alt="3D Modeling"/>
+          <h5>Multi Player Game Design With Steam Support</h5>
+          <p class="text-muted">With Alex Lee</p>
+          <button class="btn btn-sm cta-btn">$49.99</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="catalog-card">
+          <img src="images/6.png" alt="Cinema 4D"/>
+          <h5>Cinema 4D Full Course</h5>
+          <p class="text-muted">With John Doe</p>
+          <button class="btn btn-sm cta-btn">$19.99</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="catalog-card">
+          <img src="images/11.png" alt="Game Design"/>
+          <h5>Game Design Fundamentals</h5>
+          <p class="text-muted">With Jane Smith</p>
+          <button class="btn btn-sm cta-btn">Free With Pro</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="catalog-card">
+          <img src="images/12.png" alt="Blender"/>
+          <h5>3D Modeling in Blender</h5>
+          <p class="text-muted">With Alex Lee</p>
+          <button class="btn btn-sm cta-btn">Free With Pro</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CEIDE | Empowering your creative career</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const yearlyBtn = document.getElementById('yearlyBtn');
+    const monthlyBtn = document.getElementById('monthlyBtn');
+
+    yearlyBtn.addEventListener('click', () => {
+      yearlyBtn.classList.add('active');
+      monthlyBtn.classList.remove('active');
+      document.getElementById('priceYearly').style.display = 'block';
+      document.getElementById('priceMonthly').style.display = 'none';
+      document.getElementById('priceYearly2').style.display = 'block';
+      document.getElementById('priceMonthly2').style.display = 'none';
+    });
+
+    monthlyBtn.addEventListener('click', () => {
+      monthlyBtn.classList.add('active');
+      yearlyBtn.classList.remove('active');
+      document.getElementById('priceYearly').style.display = 'none';
+      document.getElementById('priceMonthly').style.display = 'block';
+      document.getElementById('priceYearly2').style.display = 'none';
+      document.getElementById('priceMonthly2').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
